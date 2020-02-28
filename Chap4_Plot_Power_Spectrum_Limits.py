@@ -11,15 +11,15 @@ import seaborn
 
 def main():
     figure = pyplot.figure(figsize=(10, 10))
-    axis1 = figure.add_subplot(1, 1,1, projection='3d')
-    # axis2 = figure.add_subplot(3, 1, 2, projection='3d')
-    # axis3 = figure.add_subplot(3, 1, 3, projection='3d')
-    # axis4 = figure.add_subplot(2, 2, 4, projection='3d')
+    axis1 = figure.add_subplot(2, 2, 1, projection='3d')
+    axis2 = figure.add_subplot(2, 2, 2, projection='3d')
+    axis3 = figure.add_subplot(2, 2, 3, projection='3d')
+    axis4 = figure.add_subplot(2, 2, 4, projection='3d')
 
-    # plot_data3d(axis1, azimuth= -151, elevation =9)
-    plot_data3d(axis1, azimuth = -179, elevation = 1, k_axis=False)
-    # plot_data3d(axis2, azimuth = -91, elevation = 1, redshift_axis=False)
-    # plot_data3d(axis3, azimuth = -90, elevation = 89, power_axis = False)
+    plot_data3d(axis1, azimuth= -151, elevation =9)
+    plot_data3d(axis2, azimuth = -179, elevation = 1, k_axis=False)
+    plot_data3d(axis3, azimuth = -91, elevation = 1, redshift_axis=False)
+    plot_data3d(axis4, azimuth = -90, elevation = 89, power_axis = False)
 
     # plot_data2d(axis2, axis1="k", axis2="power")
     # plot_data2d(axis3, axis1="z", axis2="power", y_axis=False)
